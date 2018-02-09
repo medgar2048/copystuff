@@ -1,0 +1,5 @@
+<div *ngFor="let drive of drives">
+  <h3>{{drive.letter}}: {{drive.location}}</h3>
+  <div>{{drive.status}}</div>
+  <button *ngIf="drive.needInitialized" mat-raised-button>Initialize</button>
+</div>
